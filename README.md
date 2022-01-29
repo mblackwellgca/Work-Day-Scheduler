@@ -29,7 +29,7 @@ GIVEN I am using a daily planner to create a schedule
 ## Usage
 The following animation demonstrates the application functionality:
 
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
+![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/images/05-third-party-apis-homework-demo.gif)
 
 ## Credits:
 * Sandra Smith
