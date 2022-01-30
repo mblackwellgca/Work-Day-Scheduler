@@ -1,12 +1,9 @@
-var currentDayEl = document.getElementById('lead');
-var hourEl = document.getElementById('hour');
-var userTextEl = document.getElementById('description');
-var timeBlockEl = document.getElementById('row');
-//var timeTracker = 
+
 // Display today's day and date
 var todayDate = moment().format('dddd, MMM Do YYYY');
 $("#currentDay").html(todayDate);
 
+// when the button is clicked, the text will be saved
 $('.saveBtn').on('click', saveText);
 
 // save user input
@@ -18,22 +15,37 @@ function saveText(){
 
 }
 
-
 // Color code time blocks for past, present, future
 // First, we need to track the current time before defining past, present, future
-// function timeTracker(){
-//     //get current hour
-//     var timeNow = moment().hour();
-//     // loop timeblocks
-//     $(".time-block").each(function (){
-//         var 
-//     });
+function timeTracker(){
+    //get current hour
+    var timeNow = moment().hour();
+    // loop timeblocks
+    $(".time-block").each(function (){
+        var timeBlock = parseInt($(this).attr('id').split('hour-')[1]);
+
+    //check time and add class
+    if (timeBlock < timeNow) {
+        $(this).removeClass("future");
+        $(this).removeClass("present");
+        $(this).addClass("past");        
+    }
+    else if (timeBlock === timeNow) {
+        $(this).removeClass("future");
+        $(this).addClass("present");
+        $(this).removeClass("past");
+    }
+    else {
+        $(this).addClass("future");
+        $(this).removeClass("present");
+        $(this).removeClass("past");
+    }
+    })
     
-// }
+}
 
-// enter text into event
 
-// save text in local storage
+// brings the saved text back from local storage into the designated time-block row
     $('#hour-8 .description').val(localStorage.getItem('hour-8'));
     $('#hour-9 .description').val(localStorage.getItem('hour-9'));
     $('#hour-10 .description').val(localStorage.getItem('hour-10'));
@@ -45,6 +57,4 @@ function saveText(){
     $('#hour-16 .description').val(localStorage.getItem('hour-16'));
     $('#hour-17 .description').val(localStorage.getItem('hour-17'));
 
-
-// refresh page, text still saved
-
+timeTracker()
