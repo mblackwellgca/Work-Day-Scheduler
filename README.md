@@ -2,8 +2,8 @@
 A simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.  Using the [Moment.js](https://momentjs.com/) library to work with date and time.
 
 ## Live Links
-* 
-* 
+* Published: https://mblackwellgca.github.io/Work-Day-Scheduler/
+* Repository: https://github.com/mblackwellgca/Work-Day-Scheduler
 
 ## Description
 AS AN employee with a busy schedule
@@ -38,7 +38,7 @@ The following animation demonstrates the application functionality:
 * https://momentjs.com
 * https://api.jqueryui.com/
 * https://getbootstrap.com/docs/4.6/getting-started/introduction/
-^ https://stackoverflow.com/
+* https://stackoverflow.com/
 
 ## License
 MIT License
