@@ -29,14 +29,16 @@ GIVEN I am using a daily planner to create a schedule
 ## Usage
 The following animation demonstrates the application functionality:
 
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/images/05-third-party-apis-homework-demo.gif)
+![A user clicks on slots on the color-coded calendar and edits the events.](assets/images/work_day_cheduler.gif)
 
 ## Credits:
 * Sandra Smith
 * Christopher Ponzio https://github.com/ChristopherPonzio
-* Web Dev Simplified https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw
-* Ask BCS Learning Assistant amandacrawfordcodes
-* 
+* https://www.w3schools.com/js/
+* https://momentjs.com
+* https://api.jqueryui.com/
+* https://getbootstrap.com/docs/4.6/getting-started/introduction/
+^ https://stackoverflow.com/
 
 ## License
 MIT License
